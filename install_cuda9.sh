@@ -1,5 +1,4 @@
 #!/bin/bash
-: '
 echo Installing CUDA 9.0 Runfile...
 if [ ! -f cuda_9.0.176_384.81_linux-run ]; then
     wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run -q --show-progress
@@ -34,7 +33,6 @@ fi
 sudo chmod +x cuda_9.0.176.3_linux-run
 sudo bash ./cuda_9.0.176.3_linux-run --silent -accept-eula
 sudo rm cuda_9.0.176.3_linux-run
-'
 
 echo Installing CUDA 9.0 Patch 4...
 if [ ! -f cuda_9.0.176.4_linux-run ]; then
