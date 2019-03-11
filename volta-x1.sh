@@ -26,8 +26,7 @@ th neural_style_dir_rng_fix.lua \
 -optimizer lbfgs \
 -output_image X1.png \
 -tv_weight 0.00001 \
--gpu 1,2,0 \
--multigpu_strategy 1,7,6 \
+-gpu 0 \
 -original_colors 0 \
 -backend cudnn \
 -init random \
@@ -56,8 +55,7 @@ th neural_style_dir_rng_fix.lua \
 -optimizer lbfgs \
 -output_image X2.png \
 -tv_weight 0.00001 \
--gpu 1,2,0 \
--multigpu_strategy 1,7,6 \
+-gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
 -backend cudnn
@@ -89,10 +87,9 @@ th neural_style_dir_rng_fix.lua \
 -init_image X2.png \
 -learning_rate 1 \
 -image_size 1148 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
--multigpu_strategy 6,12,8\
 
 
 #Insert
@@ -119,9 +116,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X3.png \
 -learning_rate 1 \
 -image_size 1800 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 6,12,8 \
 -normalize_gradients \
 
 
@@ -151,10 +147,9 @@ th neural_style_dir_rng_fix.lua \
 -init_image X4.png \
 -learning_rate 1 \
 -image_size 2550 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
--multigpu_strategy 8,14,11\
 
 
 
@@ -184,10 +179,9 @@ th neural_style_dir_rng_fix.lua \
 -init_image X5.png \
 -learning_rate 1 \
 -image_size 2700 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
--multigpu_strategy 5,10,8\
 
 
 
@@ -212,10 +206,9 @@ th neural_style_dir_rng_fix.lua \
 -init_image X6.png \
 -learning_rate 1 \
 -image_size 2900 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
--multigpu_strategy 8,14,11\
 
 
 
@@ -240,10 +233,9 @@ th neural_style_dir_rng_fix.lua \
 -init_image X7.png \
 -learning_rate 1 \
 -image_size 4000 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
--multigpu_strategy 2,4,3\
 
 
 STYLE_SCALE=0.5
@@ -269,9 +261,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 5600 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 # ENTERING PART 2 ##
 
@@ -319,9 +310,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 5500 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -355,9 +345,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 5400 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 
 #!/bin/bash
@@ -392,9 +381,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 5300 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -428,9 +416,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 5200 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -464,9 +451,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 5100 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -500,9 +486,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 5000 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -536,9 +521,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 4900 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -571,9 +555,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 4800 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -606,9 +589,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 4700 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -641,9 +623,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 4600 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -676,9 +657,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 4500 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 
 #!/bin/bash
@@ -712,9 +692,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 4400 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
@@ -747,9 +726,8 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 4300 \
--gpu 1,2,0 \
+-gpu 0 \
 -original_colors 0 \
--multigpu_strategy 2,4,3\
 
 #!/bin/bash
 clear
