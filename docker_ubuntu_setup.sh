@@ -1,7 +1,11 @@
-#This is for the docker image ubuntu
+#This is for the docker image ubuntu:bionic
 
 apt-get update
 apt-get install git software-properties-common curl wget libprotobuf-dev protobuf-compiler -y -qq
+
+add-apt-repository ppa:graphics-drivers/ppa -y
+apt-get remove --purge nvidia* -y -qq
+apt-get install nvidia-driver-375 -y -qq
 
 install_deb () {
   wget -O $2 $1 -q --show-progress
