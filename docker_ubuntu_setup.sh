@@ -5,7 +5,7 @@ apt-get install git software-properties-common curl wget libprotobuf-dev protobu
 
 add-apt-repository ppa:graphics-drivers/ppa -y
 apt-get remove --purge nvidia* -y -qq
-apt-get install nvidia-driver-375 -y -qq
+apt-get install nvidia-375 -y -qq
 
 install_deb () {
   wget -O $2 $1 -q --show-progress
