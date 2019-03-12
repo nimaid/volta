@@ -268,7 +268,7 @@ th neural_style_dir_rng_fix.lua \
 
 
 #!/bin/bash
-clear
+#clear
 FILE=X9.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -314,7 +314,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9a.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -350,7 +350,7 @@ th neural_style_dir_rng_fix.lua \
 
 
 #!/bin/bash
-clear
+#clear
 FILE=X9b.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -385,7 +385,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9c.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -420,7 +420,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9d.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -455,7 +455,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9e.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -490,7 +490,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9f.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -525,7 +525,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9g.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -559,7 +559,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9h.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -593,7 +593,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9i.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -627,7 +627,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9j.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -662,7 +662,7 @@ th neural_style_dir_rng_fix.lua \
 
 
 #!/bin/bash
-clear
+#clear
 FILE=X9k.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -696,7 +696,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9l.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
@@ -730,7 +730,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 
 #!/bin/bash
-clear
+#clear
 FILE=X9m.png
 if [ -f $FILE ]; then
    echo "The file '$FILE' exists."
