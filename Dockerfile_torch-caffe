@@ -127,9 +127,4 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/* /tmp/* ~/*
 
-
-
-COPY ./volta-files /volta
-WORKDIR /volta
-
 RUN luarocks install loadcaffe
