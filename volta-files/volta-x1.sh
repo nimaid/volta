@@ -653,4 +653,4 @@ verify_file X9m.png
 
 
 
-echo "All done! The final file is 'X9m.png'!"
+echo "All done!"

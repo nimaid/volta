@@ -1,6 +1,11 @@
 # volta
-An easy-to-use version of the Volta Deep Style Transfer script made by Victor Espinoza (vic8760).
+A Dockerized, heavily modified version of the Volta Deep Style Transfer script made by Victor Espinoza (vic8760).
+[Docker Hub](https://cloud.docker.com/repository/docker/nimaid/volta-deep-style/general)
 
-This is file storage for what will hopefully be a Google Colaboratory Notebook where you can run Volta on a Tesla K80! These files are required by Volta to work.
+This is a Dockerized environment with CUDA 9.0, cuDNN v7, Torch7, Caffe, and all the required files pre-installed! Just launch with nvidia-docker and get dreaming!
+`sudo docker pull nimaid/volta-deep-style:base`
+`sudo docker run --runtime=nvidia -it nimaid/volta-deep-style`
+The script is `volta-x1.sh`. It's made for single-GPU machines, and uses only GPU 0 in multi-GPU environments.
+`./volta-x1.sh test_files/style/ test_files/content.jpg`
 
-It is also possible I will modify the original shell script to take command line arguments, and potentially break-out more of the variables to tune from the terminal entry line. Maybe.
+Jupyter notebook tag and more code cleanup coming!
