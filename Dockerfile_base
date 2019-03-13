@@ -129,7 +129,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
 
 
 
-WORKDIR /volta
 COPY ./volta-files /volta
+WORKDIR /volta
 
 RUN luarocks install loadcaffe

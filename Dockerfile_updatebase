@@ -1,0 +1,6 @@
+FROM nimaid/volta-deep-style:base
+
+RUN rm -rf /volta/
+COPY ./volta-files /volta
+
+#WORKDIR /volta
