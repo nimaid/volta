@@ -3,9 +3,11 @@ A Dockerized, heavily modified version of the Volta Deep Style Transfer script m
 
 [Docker Hub](https://cloud.docker.com/repository/docker/nimaid/volta-deep-style/general)
 
+# WIP! The info below is a placeholder. The project is still under development, amd the `latest` tag is not yet created. See the Docker Hub page for the latest development and base tags!
+
 This is a Dockerized environment with CUDA 9.0, cuDNN v7, Torch7, Caffe, and all the required files pre-installed! Just launch with nvidia-docker and get dreaming!
 
-`sudo docker pull nimaid/volta-deep-style:base`
+`sudo docker pull nimaid/volta-deep-style`
 
 `sudo docker run --runtime=nvidia -it nimaid/volta-deep-style`
 
