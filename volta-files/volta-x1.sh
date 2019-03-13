@@ -3,12 +3,21 @@ CONTENT_IMAGE=$2
 
 
 
+verify_file() {
+    if [ -f $1 ]; then
+       echo "The file '$1' exists. Proceeding..."
+    else
+       echo "The file '$1' does not exist, likely the previous step failed."
+       echo "Exiting..."
+       exit 1
+    fi
+}
+
 
 
 STYLE_WEIGHT=1000
 STYLE_SCALE=1
 CONTENT_WEIGHT=5
-
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -31,12 +40,13 @@ th neural_style_dir_rng_fix.lua \
 -backend cudnn \
 -init random \
 
+verify_file X1.png
+
 
 
 STYLE_WEIGHT=100
 STYLE_SCALE=1
 CONTENT_WEIGHT=375
-
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -60,13 +70,13 @@ th neural_style_dir_rng_fix.lua \
 -normalize_gradients \
 -backend cudnn
 
+verify_file X2.png
+
 
 
 STYLE_WEIGHT=1000
 STYLE_SCALE=1
 CONTENT_WEIGHT=0
-
-
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -91,9 +101,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
-
-#Insert
-
+verify_file X3.png
 
 
 
@@ -120,10 +128,8 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
+verify_file X4.png
 
-
-
-#Insert
 
 
 th neural_style_dir_rng_fix.lua \
@@ -151,12 +157,13 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
+verify_file X5.png
+
 
 
 STYLE_WEIGHT=1000
 STYLE_SCALE=1
 CONTENT_WEIGHT=0
-
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -182,6 +189,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
+
+verify_file X6.png
 
 
 
@@ -210,6 +219,8 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
+verify_file X7.png
+
 
 
 th neural_style_dir_rng_fix.lua \
@@ -236,6 +247,9 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
+
+verify_file X8.png
+
 
 
 STYLE_SCALE=0.5
@@ -264,30 +278,16 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
+verify_file X9.png
+
+
 # ENTERING PART 2 ##
-
-
-#!/bin/bash
-#clear
-FILE=X9.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
-
-
 
 
 
 STYLE_WEIGHT=1000
-STYLE_SCALE=1
-CONTENT_WEIGHT=0
-
-
-
 STYLE_SCALE=0.5
+CONTENT_WEIGHT=0
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -313,15 +313,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9a.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9a.png
+
 
 
 th neural_style_dir_rng_fix.lua \
@@ -348,16 +341,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
+verify_file X9b.png
 
-#!/bin/bash
-#clear
-FILE=X9b.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
 
 
 th neural_style_dir_rng_fix.lua \
@@ -384,15 +369,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9c.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9c.png
+
 
 
 th neural_style_dir_rng_fix.lua \
@@ -419,15 +397,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9d.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9d.png
+
 
 
 th neural_style_dir_rng_fix.lua \
@@ -454,15 +425,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9e.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9e.png
+
 
 
 th neural_style_dir_rng_fix.lua \
@@ -489,15 +453,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9f.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9f.png
+
 
 
 th neural_style_dir_rng_fix.lua \
@@ -524,15 +481,9 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9g.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9g.png
+
+
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -558,15 +509,9 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9h.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9h.png
+
+
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -592,15 +537,9 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9i.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9i.png
+
+
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -626,15 +565,9 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9j.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9j.png
+
+
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -660,16 +593,9 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
+verify_file X9k.png
 
-#!/bin/bash
-#clear
-FILE=X9k.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -695,15 +621,9 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9l.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9l.png
+
+
 
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
@@ -729,12 +649,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-#!/bin/bash
-#clear
-FILE=X9m.png
-if [ -f $FILE ]; then
-   echo "The file '$FILE' exists."
-exit 0
-else
-   echo "The file '$FILE' in not found. Processing..."
-fi
+verify_file X9m.png
+
+
+
+echo "All done! The final file is 'X9m.png'!"
