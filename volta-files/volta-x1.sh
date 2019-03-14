@@ -72,7 +72,7 @@ th neural_style_dir_rng_fix.lua \
 -normalize_gradients \
 -backend cudnn
 
-rm X1.png
+rm X1*.png
 
 verify_file X2.png
 
@@ -105,7 +105,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
-rm X2.png
+rm X2*.png
 
 verify_file X3.png
 
@@ -134,7 +134,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
-rm X3.png
+rm X3*.png
 
 verify_file X4.png
 
@@ -165,7 +165,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
-rm X4.png
+rm X4*.png
 
 verify_file X5.png
 
@@ -200,7 +200,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
-rm X5.png
+rm X5*.png
 
 verify_file X6.png
 
@@ -231,7 +231,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
-rm X6.png
+rm X6*.png
 
 verify_file X7.png
 
@@ -262,7 +262,7 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
-rm X7.png
+rm X7*.png
 
 verify_file X8.png
 
@@ -294,7 +294,7 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
-rm X8.png
+rm X8*.png
 
 verify_file X9.png
 
@@ -326,13 +326,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9.png \
 -learning_rate 1 \
 -image_size 5500 \
 -gpu 0 \
 -original_colors 0 \
 
-rm X8.png
+rm X9.png
 
 verify_file X9a.png
 
