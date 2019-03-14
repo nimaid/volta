@@ -1,0 +1,4 @@
+FROM nimaid/volta-deep-style:torch-caffe-jupyter
+
+COPY ./volta-files /volta
+WORKDIR /volta

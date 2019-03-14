@@ -1,3 +1,5 @@
+#https://github.com/jcjohnson/neural-style
+
 STYLE_IMAGE=$1
 CONTENT_IMAGE=$2
 
@@ -70,6 +72,8 @@ th neural_style_dir_rng_fix.lua \
 -normalize_gradients \
 -backend cudnn
 
+rm X1.png
+
 verify_file X2.png
 
 
@@ -101,6 +105,8 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
+rm X2.png
+
 verify_file X3.png
 
 
@@ -127,6 +133,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
+
+rm X3.png
 
 verify_file X4.png
 
@@ -156,6 +164,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
+
+rm X4.png
 
 verify_file X5.png
 
@@ -190,6 +200,8 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
+rm X5.png
+
 verify_file X6.png
 
 
@@ -218,6 +230,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 -normalize_gradients \
+
+rm X6.png
 
 verify_file X7.png
 
@@ -248,6 +262,8 @@ th neural_style_dir_rng_fix.lua \
 -original_colors 0 \
 -normalize_gradients \
 
+rm X7.png
+
 verify_file X8.png
 
 
@@ -277,6 +293,8 @@ th neural_style_dir_rng_fix.lua \
 -image_size 5600 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X8.png
 
 verify_file X9.png
 
@@ -314,6 +332,8 @@ th neural_style_dir_rng_fix.lua \
 -gpu 0 \
 -original_colors 0 \
 
+rm X8.png
+
 verify_file X9a.png
 
 
@@ -336,11 +356,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9a.png \
 -learning_rate 1 \
 -image_size 5400 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9a.png
 
 verify_file X9b.png
 
@@ -364,11 +386,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9b.png \
 -learning_rate 1 \
 -image_size 5300 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9b.png
 
 verify_file X9c.png
 
@@ -392,11 +416,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9c.png \
 -learning_rate 1 \
 -image_size 5200 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9c.png
 
 verify_file X9d.png
 
@@ -420,11 +446,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9d.png \
 -learning_rate 1 \
 -image_size 5100 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9d.png
 
 verify_file X9e.png
 
@@ -448,11 +476,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9e.png \
 -learning_rate 1 \
 -image_size 5000 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9e.png
 
 verify_file X9f.png
 
@@ -476,11 +506,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9f.png \
 -learning_rate 1 \
 -image_size 4900 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9f.png
 
 verify_file X9g.png
 
@@ -504,11 +536,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9g.png \
 -learning_rate 1 \
 -image_size 4800 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9g.png
 
 verify_file X9h.png
 
@@ -532,11 +566,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9h.png \
 -learning_rate 1 \
 -image_size 4700 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9h.png
 
 verify_file X9i.png
 
@@ -560,11 +596,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9i.png \
 -learning_rate 1 \
 -image_size 4600 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9i.png
 
 verify_file X9j.png
 
@@ -588,11 +626,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9j.png \
 -learning_rate 1 \
 -image_size 4500 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9j.png
 
 verify_file X9k.png
 
@@ -616,11 +656,13 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9k.png \
 -learning_rate 1 \
 -image_size 4400 \
 -gpu 0 \
 -original_colors 0 \
+
+rm X9k.png
 
 verify_file X9l.png
 
@@ -629,7 +671,7 @@ verify_file X9l.png
 th neural_style_dir_rng_fix.lua \
 -style_image $STYLE_IMAGE \
 -content_image $CONTENT_IMAGE \
--output_image X9m.png \
+-output_image final.png \
 -model_file models/nin_imagenet_conv.caffemodel \
 -proto_file models/train_val.prototxt \
 -num_iterations 20 \
@@ -644,13 +686,15 @@ th neural_style_dir_rng_fix.lua \
 -content_weight $CONTENT_WEIGHT \
 -style_weight $STYLE_WEIGHT \
 -init image \
--init_image X8.png \
+-init_image X9l.png \
 -learning_rate 1 \
 -image_size 4300 \
 -gpu 0 \
 -original_colors 0 \
 
-verify_file X9m.png
+rm X9l.png
+
+verify_file final.png
 
 
 

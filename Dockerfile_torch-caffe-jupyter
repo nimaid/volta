@@ -1,0 +1,32 @@
+FROM nimaid/volta-deep-style:torch-caffe
+
+RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
+    PIP_INSTALL="python -m pip --no-cache-dir install --upgrade" && \
+    GIT_CLONE="git clone --depth 10" && \
+
+    rm -rf /var/lib/apt/lists/* \
+           /etc/apt/sources.list.d/cuda.list \
+           /etc/apt/sources.list.d/nvidia-ml.list && \
+
+    apt-get update && \
+
+# ==================================================================
+# jupyter
+# ------------------------------------------------------------------
+
+    $PIP_INSTALL jupyter && \
+
+# Install deps for Neural-Tools
+
+    $PIP_INSTALL numpy && \
+    $PIP_INSTALL scipy && \
+
+# Install IPython File Upload Widget
+    $PIP_INSTALL fileupload && \
+    jupyter nbextension install --py fileupload && \
+    jupyter nbextension enable --py fileupload
+    
+
+#install file upload widget?
+
+EXPOSE 8888
