@@ -17,4 +17,4 @@ sudo docker pull nimaid/volta-deep-style:test1
 # Reboot and you're ready to go!
 sudo reboot
 
-# Run with "sudo docker run --runtime=nvidia -it -p 8888:8888 nimaid/volta-deep-style:test1
+# Run with "sudo docker run --runtime=nvidia -it --rm -p=8888:8888 nimaid/volta-deep-style:test1
