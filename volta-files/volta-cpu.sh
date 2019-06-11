@@ -37,6 +37,7 @@ th neural_style_dir_rng_fix.lua \
 -optimizer lbfgs \
 -output_image X1.png \
 -tv_weight 0.00001 \
+-gpu -1 \
 -original_colors 0 \
 -backend cudnn \
 -init random \
@@ -66,6 +67,7 @@ th neural_style_dir_rng_fix.lua \
 -optimizer lbfgs \
 -output_image X2.png \
 -tv_weight 0.00001 \
+-gpu -1 \
 -original_colors 0 \
 -normalize_gradients \
 -backend cudnn
@@ -99,6 +101,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X2.png \
 -learning_rate 1 \
 -image_size 1148 \
+-gpu -1 \
 -original_colors 0 \
 -normalize_gradients \
 
@@ -127,6 +130,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X3.png \
 -learning_rate 1 \
 -image_size 1800 \
+-gpu -1 \
 -original_colors 0 \
 -normalize_gradients \
 
@@ -157,6 +161,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X4.png \
 -learning_rate 1 \
 -image_size 2550 \
+-gpu -1 \
 -original_colors 0 \
 -normalize_gradients \
 
@@ -191,6 +196,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X5.png \
 -learning_rate 1 \
 -image_size 2700 \
+-gpu -1 \
 -original_colors 0 \
 -normalize_gradients \
 
@@ -221,6 +227,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X6.png \
 -learning_rate 1 \
 -image_size 2900 \
+-gpu -1 \
 -original_colors 0 \
 -normalize_gradients \
 
@@ -251,6 +258,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X7.png \
 -learning_rate 1 \
 -image_size 4000 \
+-gpu -1 \
 -original_colors 0 \
 -normalize_gradients \
 
@@ -283,6 +291,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X8.png \
 -learning_rate 1 \
 -image_size 5600 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X8*.png
@@ -320,6 +329,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9.png \
 -learning_rate 1 \
 -image_size 5500 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9.png
@@ -349,6 +359,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9a.png \
 -learning_rate 1 \
 -image_size 5400 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9a.png
@@ -378,6 +389,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9b.png \
 -learning_rate 1 \
 -image_size 5300 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9b.png
@@ -407,6 +419,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9c.png \
 -learning_rate 1 \
 -image_size 5200 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9c.png
@@ -436,6 +449,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9d.png \
 -learning_rate 1 \
 -image_size 5100 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9d.png
@@ -465,6 +479,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9e.png \
 -learning_rate 1 \
 -image_size 5000 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9e.png
@@ -494,6 +509,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9f.png \
 -learning_rate 1 \
 -image_size 4900 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9f.png
@@ -523,6 +539,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9g.png \
 -learning_rate 1 \
 -image_size 4800 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9g.png
@@ -552,6 +569,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9h.png \
 -learning_rate 1 \
 -image_size 4700 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9h.png
@@ -581,6 +599,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9i.png \
 -learning_rate 1 \
 -image_size 4600 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9i.png
@@ -610,6 +629,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9j.png \
 -learning_rate 1 \
 -image_size 4500 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9j.png
@@ -639,6 +659,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9k.png \
 -learning_rate 1 \
 -image_size 4400 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9k.png
@@ -668,6 +689,7 @@ th neural_style_dir_rng_fix.lua \
 -init_image X9l.png \
 -learning_rate 1 \
 -image_size 4300 \
+-gpu -1 \
 -original_colors 0 \
 
 rm X9l.png
