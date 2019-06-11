@@ -9,9 +9,9 @@ A Dockerized, heavily modified version of the Volta Deep Style Transfer script m
 
 This is a Dockerized environment with CUDA 9.0, cuDNN v7, Torch7, Caffe, and all the required files pre-installed! Just launch with [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) and get dreaming!
 
-`sudo docker pull nimaid/volta-deep-style:test1`
+`sudo docker pull nimaid/volta-deep-style`
 
-`sudo docker run --runtime=nvidia -it nimaid/volta-deep-style:test1`
+`sudo docker run --runtime=nvidia -it nimaid/volta-deep-style`
 
 The script is `volta-x1.sh`. It's made for single-GPU machines, and uses only GPU 0 in multi-GPU environments.
 
